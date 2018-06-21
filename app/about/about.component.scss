@@ -1,0 +1,71 @@
+$primary-color: #757575;
+$heading-color: #01a093;
+
+h2 {
+	color: $primary-color;
+	font-size: 20px;
+	font-weight: 200;
+}
+p, li {
+	font-weight: 300;
+}
+a {
+	color: $heading-color;
+	font-weight: 400;
+}
+.about {
+	padding-top: 55px;
+	padding-bottom: 15px;
+}
+.me {
+	height: 100%;
+	margin: 20px auto;
+}
+.intro {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	.greeting {
+    font-size: 80px;
+		font-style: italic;
+    line-height: 70px;
+    font-weight: lighter;
+    color: $heading-color;
+    display: inline-block;
+		margin-bottom: 15px;
+	}
+	.abt {
+		font-size: 18px;
+		font-weight: 200;
+    font-style: italic;
+    color: $primary-color;
+	}
+}
+img.profile {
+	width: 345px;
+	margin: 0 auto;
+	}
+.social {
+	display: flex;
+	width: 170px;
+	height: 60px;
+	text-align: center;
+	margin: 20px auto;
+	.icon {
+    background-image: url(http://localhost:4200/assets/hexagon-900.png);
+		background-size: 60px 60px;
+		background-repeat: no-repeat;
+		width: 60px;
+    height: 60px;
+		padding: 15px;
+	}
+	.github {
+		margin-right: 20px;
+	}
+	img.git, img.link {
+		width: 30px;
+		height: 30px;
+	}
+}
+.resume {
+	margin-top: 12px;
+}

@@ -1,0 +1,21 @@
+$heading-color: #01a093;
+$primary-color: #757575;
+
+.projects {
+	padding: 75px 0;
+	text-align: center;
+}
+.project {
+	padding: 10px;
+	.project-image {
+		padding: 10px;
+	}
+	h2 {
+		color: $heading-color;
+		font-weight: 200;
+	}
+	.project-desc {
+		color: $primary-color;
+		font-weight: 200;
+	}
+}
