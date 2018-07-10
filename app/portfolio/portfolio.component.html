@@ -1,7 +1,12 @@
 <div class="projects">
 	<a [routerLink]="['project', project.linkName]" *ngFor="let project of projects">
 		<div class="project">
-			<img [src]="project.imageURL" alt="{{ project.name }}" class="{{ project.cssClass }} project-image img-responsive"/>
+		
+		
+		<div class="outside {{ project.cssClass }} " [@photoState]="flyIn">
+  		<div class="inside"><img [src]="project.imageURL" alt="{{ project.name }}" class="project-image img-responsive"/></div>
+		</div>
+	
 			<div class="{{ project.cssClass }} text">
 				<h2> {{ project.name }} </h2>
 				<p class="project-desc"> {{ project.description }} </p>

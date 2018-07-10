@@ -6,9 +6,28 @@ $primary-color: #757575;
 	text-align: center;
 }
 .project {
-	padding: 10px;
+	.outside {
+		position: absolute;
+		right: 150px;
+    width: 350px;
+    height: 380px;
+		background: $heading-color;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
+	.inside {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		background: #e4f4f3;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
 	.project-image {
-		padding: 10px;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 	}
 	h2 {
 		color: $heading-color;
@@ -28,38 +47,61 @@ $primary-color: #757575;
 @media only screen and (min-width : 1224px) {
 
 	.projects {
+		padding: 55px 95px;
+		text-align: left;
 		h2 {
 			font-size: 40px;
 		}
 		p {
 			font-size: 20px;
 		}
-		padding: 55px 95px;
-		text-align: left;
 		.project {
 			position: relative;
     	height: 390px;
       margin: 50px;
+			.outside {
+				position: absolute;
+				width: 350px;
+				height: 380px;
+				background: $heading-color;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+			}
+			.outside.realty, .outside.valerie, .outside.kw   {
+				right: -550px;
+			}
+			.outside.kwhitaker, .outside.bella  {
+				left: 850px;
+			}
+			.inside {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				background: #e4f4f3;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+			}
 			.project-image {
 				position: absolute;
-				width: 420px;
+				right: 5px;
+				top: 5px;
+				width: 330px;
+				height: 360px;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 			}
 			.text {
 				width: 400px;
-				top: 35%;
+				top: 30%;
 				position: absolute;
 			}
-			.realty.project-image, .valerie.project-image, .rooster.project-image {
-				right: 150px;
-			}
-			.realty.text, .valerie.text, .rooster.text {
+			.realty.text, .valerie.text, .kw.text {
 				left: 160px;
 			}
-			.kwhitaker.text, .bella.text, .kw.text {
+			.kwhitaker.text, .bella.text {
 				right: 120px;
-			}
-			.kwhitaker.project-image, .bella.project-image, .kw.project-image {
-				left: 150px;
 			}
 		}
 	}

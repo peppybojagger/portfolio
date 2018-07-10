@@ -17,7 +17,6 @@ import { RealtyCardsComponent } from './portfolio/project/realty-cards/realty-ca
 import { KyleWhitakerComponent } from './portfolio/project/kyle-whitaker/kyle-whitaker.component';
 import { ValerieMooreComponent } from './portfolio/project/valerie-moore/valerie-moore.component';
 import { BellaPranaComponent } from './portfolio/project/bella-prana/bella-prana.component';
-import { RoosterTillComponent } from './portfolio/project/rooster-till/rooster-till.component';
 import { KwCardsComponent } from './portfolio/project/kw-cards/kw-cards.component';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { KwCardsComponent } from './portfolio/project/kw-cards/kw-cards.componen
     KyleWhitakerComponent,
     ValerieMooreComponent,
     BellaPranaComponent,
-    RoosterTillComponent,
     KwCardsComponent
   ],
   imports: [
