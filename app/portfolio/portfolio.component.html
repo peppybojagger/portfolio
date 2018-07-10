@@ -1,11 +1,11 @@
 <div class="projects">
-	<div class="col-md-12">
 	<a [routerLink]="['project', project.linkName]" *ngFor="let project of projects">
 		<div class="project">
-			<img [src]="project.imageURL" alt="{{ project.name }}" class="project-image img-responsive"/>
-			<h2> {{ project.name }} </h2>
-			<p class="project-desc"> {{ project.description }} </p>
+			<img [src]="project.imageURL" alt="{{ project.name }}" class="{{ project.cssClass }} project-image img-responsive"/>
+			<div class="{{ project.cssClass }} text">
+				<h2> {{ project.name }} </h2>
+				<p class="project-desc"> {{ project.description }} </p>
+			</div>
 		</div>
 	</a>
-</div>
-</div>
+	</div>

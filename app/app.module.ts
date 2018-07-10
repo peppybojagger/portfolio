@@ -13,6 +13,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './portfolio/project/project.component';
 import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RealtyCardsComponent } from './portfolio/project/realty-cards/realty-cards.component';
+import { KyleWhitakerComponent } from './portfolio/project/kyle-whitaker/kyle-whitaker.component';
+import { ValerieMooreComponent } from './portfolio/project/valerie-moore/valerie-moore.component';
+import { BellaPranaComponent } from './portfolio/project/bella-prana/bella-prana.component';
+import { RoosterTillComponent } from './portfolio/project/rooster-till/rooster-till.component';
+import { KwCardsComponent } from './portfolio/project/kw-cards/kw-cards.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { AppRoutingModule } from './app-routing.module';
     PortfolioComponent,
     ContactComponent,
     ProjectComponent,
-    MainComponent
+    MainComponent,
+    RealtyCardsComponent,
+    KyleWhitakerComponent,
+    ValerieMooreComponent,
+    BellaPranaComponent,
+    RoosterTillComponent,
+    KwCardsComponent
   ],
   imports: [
     BrowserModule,

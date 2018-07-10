@@ -3,12 +3,14 @@ $heading-color: #01a093;
 
 h1 {
 	font-weight: lighter;
-	font-size: 3.8rem;
+	font-size: 4.8rem;
 	color: $heading-color;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 p, li {
 	font-weight: 300;
+	font-size: 17px;
+	line-height: 25px;
 }
 p.denver {
 	strong {
@@ -29,10 +31,19 @@ a {
 	font-size: 20px;
 	font-weight: 200;
 	color: $primary-color;
-	margin-top: 45vh;
+	margin-top: 35vh;
 	img.marker {
 		width: 40px;
 		height: auto;
 		margin-bottom: 10px;
+	}
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	.loca {
+		width: 125px;
+		margin-top: 50vh;
 	}
 }

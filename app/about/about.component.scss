@@ -8,6 +8,8 @@ h2 {
 }
 p, li {
 	font-weight: 300;
+	font-size: 15px;
+	line-height: 22px;
 }
 a {
 	color: $heading-color;
@@ -68,4 +70,49 @@ img.profile {
 }
 .resume {
 	margin-top: 12px;
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	.col-md-12 {
+    width: 65%;
+	}
+	h2 {
+		font-size: 24px;
+    font-weight: 400;
+	}
+	p, li {
+		font-size: 17px;
+		line-height: 25px;
+	}
+	.intro {
+		.greeting {
+			font-size: 100px;
+			line-height: 100px;
+		}
+		.abt {
+			font-size: 28px;
+    	line-height: 32px;
+		}
+	}
+	.me {
+		position: absolute;
+    width: 375px;
+    right: 135px;
+	}
+	.social {
+		position: absolute;
+    width: 170px;
+		right: 237px;
+    top: 470px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
 }

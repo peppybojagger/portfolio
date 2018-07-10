@@ -2,7 +2,7 @@ $heading-color: #01a093;
 $primary-color: #757575;
 
 .projects {
-	padding: 75px 0;
+	padding: 95px 0;
 	text-align: center;
 }
 .project {
@@ -18,4 +18,53 @@ $primary-color: #757575;
 		color: $primary-color;
 		font-weight: 200;
 	}
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+	.projects {
+		h2 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 20px;
+		}
+		padding: 55px 95px;
+		text-align: left;
+		.project {
+			position: relative;
+    	height: 390px;
+      margin: 50px;
+			.project-image {
+				position: absolute;
+				width: 420px;
+			}
+			.text {
+				width: 400px;
+				top: 35%;
+				position: absolute;
+			}
+			.realty.project-image, .valerie.project-image, .rooster.project-image {
+				right: 150px;
+			}
+			.realty.text, .valerie.text, .rooster.text {
+				left: 160px;
+			}
+			.kwhitaker.text, .bella.text, .kw.text {
+				right: 120px;
+			}
+			.kwhitaker.project-image, .bella.project-image, .kw.project-image {
+				left: 150px;
+			}
+		}
+	}
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
 }
