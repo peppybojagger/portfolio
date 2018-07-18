@@ -2,7 +2,7 @@ $primary-color: #757575;
 $heading-color: #01a093;
 
 h1 {
-	font-weight: lighter;
+	font-weight: 300;
 	font-size: 4.8rem;
 	color: $heading-color;
 	margin-bottom: 30px;
@@ -24,14 +24,13 @@ a {
 .contact {
 	padding-top: 55px;
 	padding-bottom: 30px;
-	height: 100vh;
 }
 .loca {
 	text-align: center;
 	font-size: 20px;
-	font-weight: 200;
+	font-weight: 300;
 	color: $primary-color;
-	margin-top: 35vh;
+	margin-top: 26vh;
 	img.marker {
 		width: 40px;
 		height: auto;
@@ -39,11 +38,35 @@ a {
 	}
 }
 
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.contact {
+		padding-left: 115px;
+	}
+	.loca {
+		margin-top: 60vh;
+	}
+}
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
 	.loca {
 		width: 125px;
 		margin-top: 50vh;
+	}
+	.contact {
+		padding-left: 90px;
+		height: 100%;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	.container {
+		width: 1400px;
+	}
+	.contact {
+		padding-left: 0;
+		height: 100vh;
 	}
 }

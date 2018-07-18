@@ -21,11 +21,13 @@ import {
 			state('out', style({
 				display: 'inherit',
 				transform: 'translateX(-700px)',
+				overflow: 'hidden',
 			})),
 			state('in', style({
 				display: 'none',
+				overflow: 'hidden',
 			})),
-			transition('* => *', animate('500ms ease')),
+			transition('* => *', animate('800ms ease-in')),
 		])
 	]
 })

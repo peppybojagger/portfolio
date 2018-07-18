@@ -4,13 +4,14 @@ $primary-color: #757575;
 .projects {
 	padding: 95px 0;
 	text-align: center;
+	overflow: hidden;
 }
 .project {
+	height: 500px;
 	.outside {
-		position: absolute;
-		right: 150px;
-    width: 350px;
-    height: 380px;
+		position: relative;
+    width: 300px;
+    height: 300px;
 		background: $heading-color;
 		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
@@ -25,23 +26,55 @@ $primary-color: #757575;
 		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 	}
+	.outside.realty, .outside.valerie, .outside.kw   {
+		right: -738px;
+	}
+	.outside.kwhitaker, .outside.bella  {
+		left: 738px;
+	}
 	.project-image {
 		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 	}
 	h2 {
 		color: $heading-color;
-		font-weight: 200;
+		font-weight: 300;
+    padding: 0 30px;
 	}
 	.project-desc {
 		color: $primary-color;
-		font-weight: 200;
+		font-weight: 300;
 	}
 }
-
+/* PLus ----------- */
+@media only screen and (min-width: 413px) {
+	.projects {
+		padding: 95px 0;
+	}
+	.outside.realty, .outside.valerie, .outside.kw   {
+		right: -758px!important;
+	}
+	.outside.kwhitaker, .outside.bella  {
+		left: 758px!important;
+	}
+}
 /* iPads and Tablets ----------- */
 @media only screen and (min-width: 768px) {
-
+	.projects {
+		padding: 40px 0 40px 95px;
+	}
+	.project {
+		.outside {
+			width: 350px;
+			height: 350px;
+		}
+		.outside.realty, .outside.valerie, .outside.kw   {
+			right: -860px!important;
+		}
+		.outside.kwhitaker, .outside.bella  {
+			left: 860px!important;
+		}
+	}
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
@@ -59,19 +92,21 @@ $primary-color: #757575;
 			position: relative;
     	height: 390px;
       margin: 50px;
+			h2 {
+				padding: 0;
+			}
 			.outside {
 				position: absolute;
-				width: 350px;
 				height: 380px;
 				background: $heading-color;
 				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 			}
 			.outside.realty, .outside.valerie, .outside.kw   {
-				right: -550px;
+				right: -550px!important;
 			}
 			.outside.kwhitaker, .outside.bella  {
-				left: 850px;
+				left: 850px!important;
 			}
 			.inside {
 				position: absolute;
@@ -108,5 +143,20 @@ $primary-color: #757575;
 }
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
-/* Styles */
+	.projects {
+		.project {
+			.outside.realty, .outside.valerie, .outside.kw   {
+				right: -350px!important;
+			}
+			.outside.kwhitaker, .outside.bella  {
+				left: 1040px!important;
+			}
+			.realty.text, .valerie.text, .kw.text {
+				left: 350px;
+			}
+			.kwhitaker.text, .bella.text {
+				right: 320px;
+			}
+		}
+	}
 }

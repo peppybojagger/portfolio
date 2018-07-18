@@ -1,8 +1,11 @@
-.project-img {
-	margin-left: 95px;
-	-webkit-clip-path: polygon(50% 80%, 0 0, 100% 0);
-	clip-path: polygon(50% 80%, 0 0, 100% 0);
-	img {
-		width: 100%;
+.project-wrap {
+	margin-top: 55px;
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.project-wrap {
+		margin-top: 0;
+		margin-left: 95px;
 	}
 }
